@@ -30,7 +30,7 @@ const getAllBookings = async (req, res) => {
     if (email) {
       query = { customerEmail: email }
     }
-    const bookings = await Booking.find().sort({ bookingDate: -1 })
+    const bookings = await Booking.find(query).sort({ bookingDate: -1 })
     res.json(bookings)
   } catch (error) {
     res.status(404).send(`Error getting Bookings, ${error.message}`)
