@@ -1,8 +1,8 @@
-# funland-backend
+# 🎡 FunLand - Park Booking Platform
 
 ## Date: 13/04/2026
 
-### By: Zainab Aljad - Fatema BuSharar - Maryam Altammam
+### By: Maryam Altammam - Zainab Aljad - Fatema BuSharar
 
 #### [Website](#)
 #### [Maryam's GitHub](https://github.com/imryms) | [Zainab's GitHub](https://github.com/Zaljad) | [Fatema's GitHub](https://github.com/FatemaBuSharar) |
@@ -19,6 +19,10 @@
 * Database: MongoDB & Mongoose.
 * Styling: CSS
 ***
+### 🔗 Project Links
+- **Frontend Repository:** [[ Frontend Repo ](https://github.com/imryms/funland-frontend)]
+- **Backend Repository:** [[ Backend Repo ](https://github.com/imryms/funland-backend)]
+***
 
 ### ***RED***
 
@@ -30,7 +34,7 @@
 
 ##### Click the link and Book your ticket 🎡.
 
-##### The project was deployed and can be viewed [here](URL).
+##### The project was deployed and can be viewed [here](https://funland-frontend-6p6a.onrender.com/).
 ***
 
 ### ***Screenshots***
