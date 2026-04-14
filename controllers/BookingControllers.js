@@ -26,11 +26,12 @@ const createBooking = async (req, res) => {
 const getAllBookings = async (req, res) => {
   try {
     const { email } = req.query
-    let query = {}
-    if (email) {
-      query = { customerEmail: email }
+    let filter = {}
+    if (!email || email.trim()==="") {
+      return res.json([])
     }
-    const bookings = await Booking.find(query).sort({ bookingDate: -1 })
+    filter = { customerEmail: email }
+    const bookings = await Booking.find(filter).sort({ createAt: -1 })
     res.json(bookings)
   } catch (error) {
     res.status(404).send(`Error getting Bookings, ${error.message}`)
