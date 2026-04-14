@@ -2,6 +2,7 @@ require('dotenv').config({ quiet: true })
 const express = require('express')
 const cors = require('cors')
 const morgan = require('morgan')
+const bookingRoutes = require('./routes/BookingRouter')
 
 const PORT = process.env.PORT || 3000
 
@@ -17,7 +18,7 @@ app.use(morgan('dev'))
 app.use(express.json())
 
 // routes
-
+app.use('/bookings', bookingRoutes)
 
 app.get('/', (req, res) => {
   res.send('Funland is running 🎡')
